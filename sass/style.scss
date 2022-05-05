@@ -65,7 +65,7 @@
                 &:hover, .active{
                     background-color: $hover-df;
                     border-left: 5px solid #EE7A3A;
-                    transition: 500ms;
+                    transition: 300ms;
                 }
             }
         }
@@ -93,9 +93,10 @@
             
             .title {
                 font-size: 20px;
+                font-weight: 300;
             }
             .subj {
-                font-size: 15px;
+                font-size: 12px;
             }
             .issn {
                 font-size: 12px;
@@ -103,9 +104,23 @@
         }
 
         .lang-pick > select {
-            padding: 5px;
-            border: none;
-            border-radius: 5px;
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 90px;
+            height: 34px;
+            left: 789px;
+            top: 17px;
+            
+            background: transparent;
+            border: 1px solid #CCCCCC;
+            border-radius: 3px;
+        }
+
+        .login > .sec1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
         }
     }
 }
