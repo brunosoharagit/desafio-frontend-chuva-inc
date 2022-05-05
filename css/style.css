@@ -89,5 +89,10 @@
 .content header .video-info .issn {
   font-size: 12px;
 }
+.content header .lang-pick > select {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
