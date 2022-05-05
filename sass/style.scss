@@ -73,14 +73,33 @@
 }
 
 .content {
+    display: flex;
+    justify-content: center;
 
     header {
+        display: flex;
         position: absolute;
+        justify-content: flex-start;
+        align-items: center;
         left: 220px;
         top: 0;
         width: 1146px;
         height: 68px;
         background-color: $hd-color;
         
+        .video-info {
+            margin: auto 30px;
+            max-height: 68px;
+            
+            .title {
+                font-size: 20px;
+            }
+            .subj {
+                font-size: 15px;
+            }
+            .issn {
+                font-size: 12px;
+            }
+        }
     }
 }
