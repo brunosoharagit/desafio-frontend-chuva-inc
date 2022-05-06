@@ -107,15 +107,58 @@ body {
     padding: 10px;
 
     h1 {
-        padding: 10px;
-        font-size: 20px;
-        color: $tt-color;
+      padding: 10px;
+      font-size: 20px;
+      color: $tt-color;
+    }
+    
+    .video {
+        margin-top: 25px;
+        margin-left: 10px;
     }
   }
 
   #content1 {
     grid-area: content1;
     padding: 10px;
+
+    .btn-list {
+      display: flex;
+      gap: 10px;
+      margin: auto 55px;
+      margin-bottom: 5px;
+
+      button {
+        height: 30px;
+        margin: 4px;
+        margin-bottom: 5px;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: $def-color;
+
+        &:hover {
+            background-color: $def-hover-btn;
+        }
+      }
+
+      .down-btn > button {
+          font-size: 15px;
+          font-weight: bold;
+          color: $white-df;
+      }
+    }
+
+    .quote-link {
+        margin: auto 45px;
+        
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $def-color;
+            font-weight: 600;
+        }
+    }
   }
 
   #content2 {
@@ -134,11 +177,42 @@ body {
   }
 }
 
-@media (max-width: 768px){
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
+@media only screen and (max-width: 1100px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1.2fr repeat(3, 1.2fr);
+    grid-template-areas:
+      "sidebar nav"
+      "sidebar main"
+      "sidebar content1"
+      "sidebar content2"
+      "sidebar content3"
+      "sidebar footer";
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .login,
+    .lang-btn {
+      margin-right: 10px;
+      margin-bottom: 25px;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .login,
+    .lang-btn {
+      margin-right: 90px;
+      margin-bottom: 25px;
+    }
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -156,9 +230,10 @@ body {
   }
 
   nav {
-      .login, .lang-btn {
-          margin-right: 90px;
-          margin-bottom: 25px;
-      }
+    .login,
+    .lang-btn {
+      margin-right: 90px;
+      margin-bottom: 25px;
+    }
   }
 }
