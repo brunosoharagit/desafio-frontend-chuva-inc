@@ -43,40 +43,46 @@ body {
 .container nav .texts h5 {
   font-weight: 100;
 }
-.container nav .lang-btn {
+.container nav .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.container nav .right .lang-btn {
   margin-left: 90px;
 }
-.container nav .lang-btn select {
+.container nav .right .lang-btn select {
   height: 25px;
   width: 100px;
 }
-.container nav .login {
+.container nav .right .login {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 35px;
 }
-.container nav .login .items {
+.container nav .right .login .items {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
-.container nav .login .items .message {
+.container nav .right .login .items .message {
   font-size: 25px;
   font-weight: 100;
 }
-.container nav .login .items .email {
+.container nav .right .login .items .email {
   font-size: 12px;
   font-weight: 100;
 }
-.container nav .login .image {
+.container nav .right .login .image {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 5px;
 }
-.container nav .login .image img {
+.container nav .right .login .image img {
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -129,7 +135,7 @@ body {
   color: #EE7A3A;
 }
 .container main .video {
-  margin-top: 25px;
+  margin-top: 27px;
   margin-left: 10px;
   background-image: url("../img/vídeo overlay.png");
   height: 400px;
@@ -203,6 +209,32 @@ body {
   grid-area: footer;
 }
 
+@media only screen and (min-width: 1222px) and (max-width: 1300px) {
+  .container main .video {
+    margin-top: 35px;
+  }
+  .container #content1 .detail-card {
+    margin-top: 9px;
+  }
+}
+@media only screen and (max-width: 1221px) {
+  .container main .video {
+    margin-top: 35px;
+  }
+
+  #content1 .detail-card {
+    margin-top: 9px;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .container nav .texts h2 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .container main .video {
+    margin-top: 12px;
+  }
+}
 @media only screen and (max-width: 980px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -218,6 +250,14 @@ body {
 nav .lang-btn {
     margin-right: 10px;
     margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  main h1 {
+    font-size: 15px;
+  }
+  main .video {
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
