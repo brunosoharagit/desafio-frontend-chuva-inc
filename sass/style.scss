@@ -285,21 +285,34 @@ body {
   }
 }
 
-@media only screen and (max-width: 1030px){
+@media only screen and (min-width: 981px) and (max-width: 1030px) {
   .container {
     nav {
       .texts {
         h2 {
-          font-size: 12px;
-          font-weight: bold;
+          font-size: 20px;
         }
       }
     }
 
     main {
-      .video {
-        margin-top: 12px;
+      padding: 5px;
+
+      h1 {
+        font-size: 19px;
       }
+
+      .video {
+        margin-top: 17px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1009px) {
+  .container {
+    main > .video {
+      margin-top: 16px;
     }
   }
 }
@@ -329,7 +342,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 965px) {
   main {
     h1 {
       font-size: 15px;
