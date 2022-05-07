@@ -108,13 +108,16 @@ body {
 .container #sidebar .sidebar-menu ul li a {
   text-decoration: none;
   font-weight: bold;
+  color: #4E4E4E;
 }
 .container #sidebar .sidebar-menu ul li:hover {
   background: #FDF1EB;
   border-left: 5px solid #222;
+  transition: 400ms;
 }
 .container #sidebar .sidebar-menu ul li:hover a {
   color: #FAFAFA;
+  transition: 400ms;
 }
 .container main {
   grid-area: main;

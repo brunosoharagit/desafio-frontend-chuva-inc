@@ -125,14 +125,17 @@ body {
             a {
               text-decoration: none;
               font-weight: bold;
+              color: $ct1-black;
             }
 
             &:hover {
               background: $ct1-color;
               border-left: 5px solid #222;
+              transition: 400ms;
 
               a {
                 color: $ct1-white;
+                transition: 400ms;
               }
             }
 
