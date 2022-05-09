@@ -118,11 +118,10 @@ body {
 }
 .container #sidebar .sidebar-menu ul li:hover {
   background: #FDF1EB;
-  border-left: 5px solid #222;
+  border-left: 5px solid #EE7A3A;
   transition: 400ms;
 }
 .container #sidebar .sidebar-menu ul li:hover a {
-  color: #FAFAFA;
   transition: 400ms;
 }
 .container main {
@@ -135,12 +134,40 @@ body {
   color: #EE7A3A;
 }
 .container main .video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
   margin-top: 27px;
   margin-left: 10px;
   background-image: url("../img/vídeo overlay.png");
   height: 400px;
   width: auto;
   border-radius: 5px;
+}
+.container main .video .title > p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.container main .video .video-footer {
+  display: flex;
+}
+.container main .video .video-footer .profile > img {
+  border: 1px solid #EE7A3A;
+  border-radius: 50%;
+}
+.container main .video .video-footer .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25px;
+}
+.container main .video .video-footer .texts .name {
+  font-size: 34px;
+  font-weight: 600;
+}
+.container main .video .video-footer .texts .funct {
+  font-weight: 600;
 }
 .container #content1 {
   grid-area: content1;

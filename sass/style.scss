@@ -139,11 +139,10 @@ body {
 
           &:hover {
             background: $ct1-color;
-            border-left: 5px solid #222;
+            border-left: 5px solid #EE7A3A;
             transition: 400ms;
 
             a {
-              color: $ct1-white;
               transition: 400ms;
             }
           }
@@ -163,12 +162,46 @@ body {
     }
 
     .video {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
       margin-top: 27px;
       margin-left: 10px;
       background-image: url("../img/vídeo\ overlay.png");
       height: 400px;
       width: auto;
       border-radius: 5px;
+
+      .title > p {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .video-footer {
+        display: flex;
+
+        .profile > img {
+          border: 1px solid #EE7A3A;
+          border-radius: 50%;
+        }
+
+        .texts {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 25px;
+
+          .name {
+            font-size: 34px;
+            font-weight: 600;
+          }
+
+          .funct {
+            font-weight: 600;
+          }
+        }
+      }
     }
   }
 
